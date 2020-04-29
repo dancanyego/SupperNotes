@@ -43,3 +43,7 @@ Navigation.kt: Contains Top-level functions for starting each feature with the a
 Constants.kt: Contains messages and keys for front end Android
 BaseLogic.kt: Abstract class for Logic classes. Could be optimized, currently just contains a DispatcherProvider (for Coroutines) as a property, and a Job object for keeping track and disposing in-flight coroutines.
 AndroidExt.kt: Some handy Extensions functions for front end Android
+
+# Authentication
+
+Currently implemented with FirebaseAuth; manages user authentication.
