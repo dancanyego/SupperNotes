@@ -14,3 +14,13 @@ NoteListView contains logic and bindings to the user interface
 NoteListAdapter contains a decoupled RecyclerView.ListAdapter w/ DiffUtil
 NoteListViewModel contains the most recent data which has been returned from the “backend” of the application (or data which is passed into the feature via navigation), and persists this data so that the logic class or view does not need to (if they did, it would break the separation of concerns)
 NoteListInjector: Build logic (Dpependency Injection Implementation) for this feature.
+
+# NoteDetailFeature
+This feature allows the User to view, update, create, and delete a Note. Data is stored in various local/remote datasources based on whether the user is or isn't logged in, and if they are in public or private mode.
+
+INoteDetailContract specifies the different interactions between classes and the events which may occur in this particular feature
+NoteDetailActivity is a feature level “container”, within which these different things are deployed in to (it is also the entry point of the feature)
+NoteDetailLogic is the “decision maker” of the feature, which handles the events and interactions specified in the contract (this kind of class is the most important to test)
+NoteDetailView contains logic and bindings to the user interface
+NoteDetailViewModel contains the most recent data which has been returned from the “backend” of the application (or data which is passed into the feature via navigation), and persists this data so that the logic class or view does not need to (if they did, it would break the separation of concerns)
+NoteDetailInjector: Build logic (Dpependency Injection Implementation) for this feature.
