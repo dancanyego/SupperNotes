@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "56094113196",
+    "firebase_url": "https://supernote-7eda3.firebaseio.com",
+    "project_id": "supernote-7eda3",
+    "storage_bucket": "supernote-7eda3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56094113196:android:c39b1f96b9fb7b555d0e09",
+        "android_client_info": {
+          "package_name": "com.danny.suppernotes.notelist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56094113196-tp20o7kf77ku02u2cdg7fqbr97fsfnt3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhu_OdloPFgquviFLE9q0r-9b1sKl5hLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56094113196-tp20o7kf77ku02u2cdg7fqbr97fsfnt3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
