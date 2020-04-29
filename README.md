@@ -36,3 +36,10 @@ LoginActivity acts as the View and Container in this feature (for reasons mentio
 LoginLogic is the “decision maker” of the feature, which handles the events and interactions specified in the contract (this kind of class is the most important to test)
 LoginResult Wrapper for when GoogleSignInProviders does it's thing (logging a User In)
 LoginInjector: Build logic (Dpependency Injection Implementation) for this feature.
+
+# Common
+
+Navigation.kt: Contains Top-level functions for starting each feature with the appropriate arguments.
+Constants.kt: Contains messages and keys for front end Android
+BaseLogic.kt: Abstract class for Logic classes. Could be optimized, currently just contains a DispatcherProvider (for Coroutines) as a property, and a Job object for keeping track and disposing in-flight coroutines.
+AndroidExt.kt: Some handy Extensions functions for front end Android
