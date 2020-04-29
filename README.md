@@ -24,3 +24,15 @@ NoteDetailLogic is the “decision maker” of the feature, which handles the ev
 NoteDetailView contains logic and bindings to the user interface
 NoteDetailViewModel contains the most recent data which has been returned from the “backend” of the application (or data which is passed into the feature via navigation), and persists this data so that the logic class or view does not need to (if they did, it would break the separation of concerns)
 NoteDetailInjector: Build logic (Dpependency Injection Implementation) for this feature.
+
+# Login feature
+
+This feature allows the User to authenticate with GoogleSignIn; which is currently the only supported sign in function. No passwords or in-app Sign up is required.
+
+Note: I normally advocate against using Activities as Views, but I ran in to a tight-coupling problem with GoogleSignIn API (which requires you to override Activity.onActivityResult(...). Given this tight coupling, and the simplicity of this feature (it only has two buttons including the toolbar), I decided to just use the Activity as a pragmatic decision.
+
+ILoginContract specifies the different interactions between classes and the events which may occur in this particular feature
+LoginActivity acts as the View and Container in this feature (for reasons mentioned above)
+LoginLogic is the “decision maker” of the feature, which handles the events and interactions specified in the contract (this kind of class is the most important to test)
+LoginResult Wrapper for when GoogleSignInProviders does it's thing (logging a User In)
+LoginInjector: Build logic (Dpependency Injection Implementation) for this feature.
